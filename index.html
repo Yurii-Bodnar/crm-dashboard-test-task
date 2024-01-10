@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="pages">
+      <div>
+        <a class="pages__logo" href="./index.html">
+          <svg class="pages__logo-icon">
+            <use href="./images//icons/sprite.svg#icon-logo"></use>
+          </svg>
+          <div class="pages__box">
+            <h1 class="pages__title">Dashboard</h1>
+            <span class="pages__version">v.01</span>
+          </div>
+        </a>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html"
+                ><svg class="navigation__link-icon">
+                  <use
+                    href="./images/icons/sprite.svg#icon-dashboard"
+                  ></use></svg
+                >Dashboard</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html"
+                ><svg class="navigation__link-icon">
+                  <use
+                    href="./images/icons/sprite.svg#icon-products"
+                  ></use></svg
+                >Product
+              </a>
+              <span class="navigation__box"
+                ><svg class="navigation__link-icon-chevron">
+                  <use
+                    href="./images/icons/sprite.svg#icon-chevron-right"
+                  ></use></svg
+              ></span>
+            </li>
+            <li class="navigation__item--current">
+              <a class="navigation__link--current-link" href="./index.html"
+                ><svg class="navigation__link-icon">
+                  <use
+                    href="./images/icons/sprite.svg#icon-customers"
+                  ></use></svg
+                >Customers
+              </a>
+              <span class="navigation__box">
+                <svg class="navigation__link-icon-chevron">
+                  <use
+                    href="./images/icons/sprite.svg#icon-customers-white"
+                  ></use>
+                </svg>
+              </span>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html"
+                ><svg class="navigation__link-icon">
+                  <use href="./images/icons/sprite.svg#icon-income"></use></svg
+                >Income
+              </a>
+              <span class="navigation__box"
+                ><svg class="navigation__link-icon-chevron">
+                  <use
+                    href="./images/icons/sprite.svg#icon-chevron-right"
+                  ></use></svg
+              ></span>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html"
+                ><svg class="navigation__link-icon">
+                  <use href="./images/icons/sprite.svg#icon-promote"></use></svg
+                >Promote
+              </a>
+              <span class="navigation__box"
+                ><svg class="navigation__link-icon-chevron">
+                  <use
+                    href="./images/icons/sprite.svg#icon-chevron-right"
+                  ></use></svg
+              ></span>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html"
+                ><svg class="navigation__link-icon">
+                  <use href="./images/icons/sprite.svg#icon-help"></use></svg
+                >Help
+              </a>
+              <span class="navigation__box"
+                ><svg class="navigation__link-icon-chevron">
+                  <use
+                    href="./images/icons/sprite.svg#icon-chevron-right"
+                  ></use></svg
+              ></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="account">
+        <picture
+          ><source srcset="./images/avatar.png, ./images/avatar-2x.png" />
+          <img src="./images/avatar.png" alt="Avatar" width="42"
+        /></picture>
+        <div class="account__container">
+          <h3 class="account__name">Evano</h3>
+          <p class="account__position">Project Manager</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="customers">
+        <h2 class="customers__title-hello">Hello Evano 👋🏼,</h2>
+        <div class="customers__container">
+          <div class="wrapper">
+            <div>
+              <h2 class="wrapper__title">All Customers</h2>
+              <p class="wrapper__info">Active Members</p>
+            </div>
+            <div class="wrapper__search-box">
+              <svg class="wrapper__search-box-icon">
+                <use href="./images/icons/sprite.svg#icon-search"></use>
+              </svg>
+              <label for="search">
+                <input
+                  class="wrapper__input"
+                  type="text"
+                  id="search"
+                  name="search"
+                  placeholder="Search"
+                />
+              </label>
+            </div>
+          </div>
+          <table class="container-table">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title--name-style">
+                  Customer Name
+                </th>
+                <th scope="col" class="table-title--company-style">Company</th>
+                <th scope="col" class="table-title--phone-style">
+                  Phone Number
+                </th>
+                <th scope="col" class="table-title--email-style">Email</th>
+                <th scope="col" class="table-title--county-style">Country</th>
+                <th scope="col" class="table-title--status-style">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Jane Cooper
+                </td>
+                <td data-label="Company" class="table-text">Microsoft</td>
+                <td data-label="Phone Number" class="table-text">
+                  (225) 555-0118
+                </td>
+                <td data-label="Email" class="table-text">
+                  jane@microsoft.com
+                </td>
+                <td data-label="Country" class="table-text">United States</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn" type="button">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Floyd Miles
+                </td>
+                <td data-label="Company" class="table-text">Yahoo</td>
+                <td data-label="Phone Number" class="table-text">
+                  (205) 555-0100
+                </td>
+                <td data-label="Email" class="table-text">floyd@yahoo.com</td>
+                <td data-label="Country" class="table-text">Kiribati</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn--inactive" type="button">
+                    Inactive
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Ronald Richards
+                </td>
+                <td data-label="Company" class="table-text">Adobe</td>
+                <td data-label="Phone Number" class="table-text">
+                  (302) 555-0107
+                </td>
+                <td data-label="Email" class="table-text">ronald@adobe.com</td>
+                <td data-label="Country" class="table-text">Israel</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn--inactive" type="button">
+                    Inactive
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Marvin McKinney
+                </td>
+                <td data-label="Company" class="table-text">Tesla</td>
+                <td data-label="Phone Number" class="table-text">
+                  (252) 555-0126
+                </td>
+                <td data-label="Email" class="table-text">marvin@tesla.com</td>
+                <td data-label="Country" class="table-text">Iran</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn" type="button">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Jerome Bell
+                </td>
+                <td data-label="Company" class="table-text">Google</td>
+                <td data-label="Phone Number" class="table-text">
+                  (629) 555-0129
+                </td>
+                <td data-label="Email" class="table-text">jerome@google.com</td>
+                <td data-label="Country" class="table-text">Réunion</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn" type="button">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Kathryn Murphy
+                </td>
+                <td data-label="Company" class="table-text">Microsoft</td>
+                <td data-label="Phone Number" class="table-text">
+                  (406) 555-0120
+                </td>
+                <td data-label="Email" class="table-text">
+                  kathryn@microsoft.com
+                </td>
+                <td data-label="Country" class="table-text">Curaçao</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn" type="button">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Jacob Jones
+                </td>
+                <td data-label="Company" class="table-text">Yahoo</td>
+                <td data-label="Phone Number" class="table-text">
+                  (208) 555-0112
+                </td>
+                <td data-label="Email" class="table-text">jacob@yahoo.com</td>
+                <td data-label="Country" class="table-text">Brazil</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn" type="button">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name" class="table-text">
+                  Kristin Watson
+                </td>
+                <td data-label="Company" class="table-text">Facebook</td>
+                <td data-label="Phone Number" class="table-text">
+                  (704) 555-0127
+                </td>
+                <td data-label="Email" class="table-text">
+                  kristin@facebook.com
+                </td>
+                <td data-label="Country" class="table-text">Åland Islands</td>
+                <td data-label="Status" class="btn-col">
+                  <button class="status-btn--inactive" type="button">
+                    Inactive
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <p class="count-page">Showing data 1 to 8 of 256K entries</p>
+            <div class="pagination-box">
+              <button type="button" class="pagination-box__btn"><</button>
+              <button type="button" class="pagination-box__btn--current">
+                1
+              </button>
+              <button type="button" class="pagination-box__btn">2</button>
+              <button type="button" class="pagination-box__btn">3</button>
+              <button type="button" class="pagination-box__btn--for-mobile">
+                4
+              </button>
+              <button type="button" class="pagination-box__btn--marker">
+                ...
+              </button>
+              <button type="button" class="pagination-box__btn--large-count">
+                40
+              </button>
+              <button type="button" class="pagination-box__btn">></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

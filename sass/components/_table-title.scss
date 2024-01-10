@@ -1,0 +1,28 @@
+@import '../vendors/mixins';
+.table-title {
+  &--name-style {
+    @include title;
+    width: 172px;
+  }
+  &--company-style {
+    @include title;
+    width: 131px;
+  }
+  &--phone-style {
+    @include title;
+    width: 156px;
+  }
+  &--email-style {
+    @include title;
+    width: 207px;
+  }
+  &--county-style {
+    @include title;
+    width: 140px;
+  }
+  &--status-style {
+    @include title;
+    width: 80px;
+    text-align: center;
+  }
+}

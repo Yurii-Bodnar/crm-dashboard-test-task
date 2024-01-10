@@ -1,0 +1,145 @@
+.pages {
+  padding: 37px 28px 0px;
+  width: 306px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @media screen and (max-width: 1000px) {
+    width: auto;
+  }
+
+  &__title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.26px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    &-icon {
+      width: 37px;
+      height: 37px;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+  &__version {
+    color: #838383;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.1px;
+  }
+}
+.navigation {
+  padding: 65px 0px 0 11px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 8px 11px;
+    cursor: pointer;
+    &--current {
+      border-radius: 8px;
+      background: #5932ea;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 8px 11px;
+    }
+  }
+  &__item:hover {
+    border: none;
+    outline: 1px solid#5932ea;
+    border-radius: 8px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #9197b3;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    &--current-link {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.14px;
+    }
+    &-icon {
+      width: 24px;
+      height: 24px;
+      fill: #9197b3;
+    }
+    &-icon-chevron {
+      width: 16px;
+      height: 16px;
+      fill: #9197b3;
+    }
+  }
+}
+.account {
+  padding-bottom: 76px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @media screen and (max-width: 1000px) {
+    padding: 65px 0;
+  }
+  &__name {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+  }
+  &__position {
+    color: #757575;
+
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+  }
+}

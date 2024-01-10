@@ -1,0 +1,224 @@
+@import '../vendors/mixins';
+
+.customers {
+  padding: 41px 95px 258px 71px;
+  width: 100%;
+  @media screen and (max-width: 1000px) {
+    padding: 37px 28px 37px;
+  }
+  &__title-hello {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+    }
+  }
+  &__container {
+    padding: 30px 44px 40px 38px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 51px;
+    @media screen and (max-width: 1000px) {
+      position: sticky;
+      overflow-x: auto;
+      padding: 13px;
+    }
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+  &__title {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.22px;
+  }
+  &__info {
+    margin-top: 7px;
+    color: #16c098;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.14px;
+  }
+  &__search-box {
+    position: relative;
+    margin-top: 40px;
+  }
+  &__search-box-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+  }
+  &__input {
+    width: 216px;
+    border-radius: 10px;
+    background: #f9fbff;
+    padding: 10px 0 10px 0;
+    border: none;
+    padding-left: 40px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.12px;
+  }
+  &__input::placeholder {
+    color: #b5b7c0;
+  }
+}
+.container-table {
+  padding-top: 40px;
+}
+.btn-col {
+  border-bottom: 1px solid #eee;
+}
+.status-btn {
+  color: #008767;
+  cursor: pointer;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  padding: 4px 18px;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid #00b087;
+  background: rgba(22, 192, 152, 0.38);
+  &--inactive {
+    @include btn-inactive();
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.count-page {
+  color: #b5b7c0;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 10px;
+  }
+}
+.pagination-box {
+  display: flex;
+  gap: 12px;
+  &__btn {
+    color: #404b52;
+
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.12px;
+    border-radius: 4px;
+    border: none;
+    outline: 1px solid #eee;
+
+    background: #f5f5f5;
+    padding: 6px 9px;
+    &--current {
+      color: #fff;
+
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 12px */
+      letter-spacing: -0.12px;
+      border-radius: 4px;
+      border: none;
+      outline: 1px solid #5932ea;
+
+      background: #5932ea;
+      padding: 6px 10px;
+    }
+    &--marker {
+      color: #000;
+
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 12px */
+      letter-spacing: -0.12px;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+    }
+    &--large-count {
+      padding: 6px 5px;
+      color: #404b52;
+
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 12px */
+      letter-spacing: -0.12px;
+      border-radius: 4px;
+      border: none;
+      outline: 1px solid #eee;
+
+      background: #f5f5f5;
+    }
+    &--for-mobile {
+      color: #404b52;
+
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 12px */
+      letter-spacing: -0.12px;
+      border-radius: 4px;
+      border: none;
+      outline: 1px solid #eee;
+
+      background: #f5f5f5;
+      padding: 6px 9px;
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+}
